@@ -21,8 +21,9 @@ app.get('/', (req,res) => {
 app.get('/url/:EncryptedFileURL',HandleDownload);
 
 
-const PORT = 1700
+// const PORT = 1700
 
-app.listen(PORT, () => {
-  console.log(`Lauching server on port ${PORT}`)
-})
+// app.listen(PORT, () => {
+//   console.log(`Lauching server on port ${PORT}`)
+// })
+app.listen(process.env.PORT);
